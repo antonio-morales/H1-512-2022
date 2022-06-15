@@ -1,0 +1,8 @@
+#!/bin/bash
+FILES=$PWD/afl_out/default/queue/*
+for f in $FILES
+do
+ echo "[*] Processing $f file..."
+ ./Exercise3 "$f" output
+done
+
